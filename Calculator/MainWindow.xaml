@@ -1,0 +1,39 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <StackPanel>
+        <TextBox Text="0" x:Name="tbInput" Width="300" HorizontalAlignment="Center" Margin="0,10,0,10"/>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="1" Width="40" Height="40" Margin="10,0,10,0" Click="NumberInput_Click" />
+            <Button Content="2" Width="40" Height="40" Margin="10,0,10,0" Click="NumberInput_Click"  />
+            <Button Content="3" Width="40" Height="40" Margin="10,0,10,0" Click="NumberInput_Click" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,10,0,10">
+            <Button Content="4" Width="40" Height="40" Margin="10,0,10,0" Click="NumberInput_Click"  />
+            <Button Content="5" Width="40" Height="40" Margin="10,0,10,0" Click="NumberInput_Click"  />
+            <Button Content="6" Width="40" Height="40" Margin="10,0,10,0" Click="NumberInput_Click"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <Button Content="7" Width="40" Height="40" Margin="10,0,10,0" Click="NumberInput_Click"  />
+            <Button Content="8" Width="40" Height="40" Margin="10,0,10,0" Click="NumberInput_Click"  />
+            <Button Content="9" Width="40" Height="40" Margin="10,0,10,0" Click="NumberInput_Click"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <Button Content="," Width="40" Height="40" Margin="10,0,10,0" Click="Button_Click_1"/>
+            <Button Content="0" Width="40" Height="40" Margin="10,0,10,0" Click="NumberInput_Click"  />
+            <Button Content="=" Width="40" Height="40" Margin="10,0,10,0" Click="Button_Click" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <Button Content="+" Width="40" Height="40" Margin="10,0,10,0" Click="Operand_Click" />
+            <Button Content="-" Width="40" Height="40" Margin="10,0,10,0" Click="Operand_Click" />
+            <Button Content="*" Width="40" Height="40" Margin="10,0,10,0" Click="Operand_Click" />
+            <Button Content="/" Width="40" Height="40" Margin="10,0,10,0" Click="Operand_Click" />
+        </StackPanel>
+    </StackPanel>
+</Window>
