@@ -31,6 +31,7 @@ namespace FirstAPPWPF
             string s = "({[";
             string s2 = ")]}";
 
+            //Check
             foreach(char item in tbInput.Text)
             {
                 if(s.Contains(item))
